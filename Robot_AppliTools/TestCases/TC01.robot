@@ -2,6 +2,9 @@
 Library    SeleniumLibrary
 Library    EyesLibrary    runner=web_ufg    config=applitools.yaml
 Resource    ../Resources/Login.robot
+Variables    ../Main/driver.py
+Library    ../Main/driver.py
+Suite Setup    My Function
 
 *** Test Cases ***
 log
@@ -11,4 +14,3 @@ log
     Eyes Check Window
     Close Browser
     Eyes Close Async
-    
